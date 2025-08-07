@@ -46,6 +46,24 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 4. Access the application at `http://localhost:5000`
 5. Fill the registration form and submit
 
+## Screenshots
+
+### Registration Form
+![Registration Form](screenshots/registration-form.png)
+*Clean and professional registration form with name and email fields*
+
+### API Response
+![API Response](screenshots/api-response.png)
+*JSON data retrieved from MongoDB Atlas via /api endpoint*
+
+### Form Submission Success
+![Success Message](screenshots/success-message.png)
+*Confirmation message after successful data submission*
+
+### MongoDB Atlas Data
+![MongoDB Data](screenshots/mongodb-data.png)
+*Form data stored in MongoDB Atlas collection*
+
 ## Features
 
 - User registration form with MongoDB Atlas integration
