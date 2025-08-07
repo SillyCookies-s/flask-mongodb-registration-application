@@ -2,10 +2,30 @@
 
 A simple Flask application with MongoDB Atlas integration for user registration.
 
+## Architecture
+
+```
+┌─────────────────┐    HTTP Requests    ┌─────────────────┐
+│                 │ ──────────────────► │                 │
+│   Frontend      │                     │   Backend       │
+│   (Port 5000)   │ ◄────────────────── │   (Port 3000)   │
+│                 │    HTTP Responses   │                 │
+└─────────────────┘                     └─────────────────┘
+         │                                        │
+         │                                        │
+         ▼                                        ▼
+┌─────────────────┐                     ┌─────────────────┐
+│                 │                     │                 │
+│   HTML Form     │                     │   MongoDB       │
+│   (index.html)  │                     │   Atlas         │
+│                 │                     │   (Cloud DB)    │
+└─────────────────┘                     └─────────────────┘
+```
+
 ## Project Structure
 
 ```
-3/
+flask-mongodb-registration-application/
 ├── backend/
 │   ├── app.py              # Backend Flask application
 │   ├── requirements.txt    # Backend dependencies
@@ -82,26 +102,6 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 Create a `.env` file in the backend directory with:
 ```
 MONGO_URL=your_mongodb_atlas_connection_string
-```
-
-## Architecture
-
-```
-┌─────────────────┐    HTTP Requests    ┌─────────────────┐
-│                 │ ──────────────────► │                 │
-│   Frontend      │                     │   Backend       │
-│   (Port 5000)   │ ◄────────────────── │   (Port 3000)   │
-│                 │    HTTP Responses   │                 │
-└─────────────────┘                     └─────────────────┘
-         │                                        │
-         │                                        │
-         ▼                                        ▼
-┌─────────────────┐                     ┌─────────────────┐
-│                 │                     │                 │
-│   HTML Form     │                     │   MongoDB       │
-│   (index.html)  │                     │   Atlas         │
-│                 │                     │   (Cloud DB)    │
-└─────────────────┘                     └─────────────────┘
 ```
 
 ### Data Flow:
