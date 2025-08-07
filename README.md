@@ -72,13 +72,14 @@ flask-mongodb-registration-application/
 ![Registration Form](screenshots/registration-form.png)
 *Clean and professional registration form with name and email fields*
 
-### API Response
-![API Response](screenshots/api-response.png)
-*JSON data retrieved from MongoDB Atlas via /api endpoint*
-
 ### Form Submission Success
 ![Success Message](screenshots/success-message.png)
 *Confirmation message after successful data submission*
+
+
+### API Response
+![API Response](screenshots/api-response.png)
+*JSON data retrieved from MongoDB Atlas via /api endpoint*
 
 ### MongoDB Atlas Data
 ![MongoDB Data](screenshots/mongodb-data.png)
