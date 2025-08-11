@@ -25,19 +25,26 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 ## Project Structure
 
 ```
-flask-mongodb-registration-application/
+3/
 ├── backend/
-│   ├── app.py              # Backend Flask application
-│   ├── requirements.txt    # Backend dependencies
-│   ├── .env                # Environment variables (not in repo)
-│   └── .env.example        # Environment variables template
-├── frontend/ 
-│   ├── app.py              # Frontend Flask application
-│   ├── requirements.txt    # Frontend dependencies
-│   └── templates/ 
-│       └── index.html      # Registration form template
-├── .gitignore              # Git ignore file
-└── README.md               # Project documentation
+│   ├── app.py                  # Backend Flask application
+│   ├── requirements.txt        # Backend dependencies
+│   ├── .env                    # Environment variables (not in repo)
+│   └── .env.example            # Environment variables template
+├── frontend/   
+│   ├── app.py                  # Frontend Flask application
+│   ├── requirements.txt        # Frontend dependencies
+│   └── templates/  
+│       └── index.html          # Registration form template
+├── screenshots/    
+│   ├── api-response.png        # API endpoint response
+│   ├── Error-message.png       # Error handling screenshot
+│   ├── mongodb-data.png        # MongoDB Atlas data view
+│   ├── registration-form.png   # Registration form UI
+│   └── success-message.png     # Success confirmation
+├── .gitignore                  # Git ignore file
+├── Flask_MongoDB_Assignment.docx # Project documentation
+└── README.md                   # Project documentation
 ```
 
 ## Setup Instructions
