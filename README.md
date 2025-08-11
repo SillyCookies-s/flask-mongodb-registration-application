@@ -76,6 +76,9 @@ flask-mongodb-registration-application/
 ![Success Message](screenshots/success-message.png)
 *Confirmation message after successful data submission*
 
+### Error Handling
+![Error Response](screenshots/Error-message.png)
+*Error message displayed when form submission fails*
 
 ### API Response
 ![API Response](screenshots/api-response.png)
