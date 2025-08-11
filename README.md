@@ -26,14 +26,19 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 
 ```
 3/
+├── .github/
+│   └── workflows/
+│       └── ci-gitactions.yml   # CI pipeline for builds images to be pushed to Docker hub
 ├── backend/
 │   ├── app.py                  # Backend Flask application
 │   ├── requirements.txt        # Backend dependencies
+│   ├── Dockerfile              # Backend Docker configuration
 │   ├── .env                    # Environment variables (not in repo)
 │   └── .env.example            # Environment variables template
 ├── frontend/   
 │   ├── app.py                  # Frontend Flask application
 │   ├── requirements.txt        # Frontend dependencies
+│   ├── Dockerfile              # Frontend Docker configuration
 │   └── templates/  
 │       └── index.html          # Registration form template
 ├── screenshots/    
@@ -43,7 +48,8 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 │   ├── registration-form.png   # Registration form UI
 │   └── success-message.png     # Success confirmation
 ├── .gitignore                  # Git ignore file
-├── Flask_MongoDB_Assignment.docx # Project documentation
+├── docker-compose.yml          # Multi-container Docker setup
+├── Flask_MongoDB_Documented.docx # Project documentation
 └── README.md                   # Project documentation
 ```
 
@@ -67,11 +73,23 @@ A simple Flask application with MongoDB Atlas integration for user registration.
 
 ## Usage
 
+### Local Development
 1. Configure MongoDB Atlas connection in `.env` file
 2. Run backend server: `python3 backend/app.py`
 3. Run frontend server: `python3 frontend/app.py`
 4. Access the application at `http://localhost:5000`
 5. Fill the registration form and submit
+
+### Docker Deployment
+1. Configure MongoDB Atlas connection in `backend/.env` file
+2. Build and run with Docker Compose: `docker-compose up --build`
+3. Access the application at `http://localhost:5000`
+
+### CI/CD Pipeline
+- Automatic Docker image builds on push to `tree` branch
+- Images pushed to Docker Hub:
+  - `namanss/flask-registration-frontend:latest`
+  - `namanss/flask-registration-backend:latest`
 
 ## Screenshots
 
@@ -127,4 +145,6 @@ MONGO_URL=your_mongodb_atlas_connection_string
 - **Backend**   : Flask, PyMongo, Python-dotenv, Flask-CORS
 - **Frontend**  : Flask, HTML, CSS, Requests
 - **Database**  : MongoDB Atlas
-- **Deployment**: Local development servers
+- **Containerization**: Docker, Docker Compose
+- **CI/CD**: GitHub Actions
+- **Deployment**: Local development servers, Docker containers
