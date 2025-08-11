@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request, jsonify
 import requests
+import os
 
 app = Flask(__name__)
 
-BACKEND_URL = 'http://localhost:3000'
+BACKEND_URL = os.getenv('BACKEND_URL', 'http://0.0.0.0:3000')
 
 @app.route('/')
 def home():
