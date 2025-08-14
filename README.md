@@ -135,11 +135,11 @@ MONGO_URL=your_mongodb_atlas_connection_string
 ## Docker Hub links:
 Frontend Docker Image:
 ```
-- https://hub.docker.com/r/namanss/flask-registration-frontend:latest
+https://hub.docker.com/r/namanss/flask-registration-frontend:latest
 ```
 Backend Docker Image:
 ```
-- https://hub.docker.com/r/namanss/flask-registration-backend:latest
+https://hub.docker.com/r/namanss/flask-registration-backend:latest
 ```
 
 ### Data Flow:
