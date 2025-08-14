@@ -133,11 +133,13 @@ Create a `.env` file in the backend directory with:
 MONGO_URL=your_mongodb_atlas_connection_string
 ```
 ## Docker Hub links:
+Frontend Docker Image:
 ```
-- [Frontend](https://hub.docker.com/r/namanss/flask-registration-frontend"latest)
+- https://hub.docker.com/r/namanss/flask-registration-frontend:latest
 ```
+Backend Docker Image:
 ```
-- [Backend](https://hub.docker.com/r/namanss/flask-registration-backend:latest)
+- https://hub.docker.com/r/namanss/flask-registration-backend:latest
 ```
 
 ### Data Flow:
